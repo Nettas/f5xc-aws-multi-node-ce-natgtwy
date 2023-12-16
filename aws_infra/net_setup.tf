@@ -46,3 +46,39 @@ resource "aws_subnet" "securityServicesSubnetWorkloadAZ1" {
   cidr_block        = var.SecurityServiceWorkloadCIDRAZ1
   availability_zone = local.az1
 }
+
+resource "aws_subnet" "securityServicesSubnetInsideAZ2" {
+  vpc_id            = aws_vpc.vpc.id
+  cidr_block        = var.SecurityServiceInsideCIDRAZ2
+  availability_zone = local.az1
+}
+
+resource "aws_subnet" "securityServicesSubnetOutsideAZ2" {
+  vpc_id            = aws_vpc.vpc.id
+  cidr_block        = var.SecurityServiceOutsideCIDRAZ2
+  availability_zone = local.az1
+}
+
+resource "aws_subnet" "securityServicesSubnetWorkloadAZ2" {
+  vpc_id            = aws_vpc.vpc.id
+  cidr_block        = var.SecurityServiceWorkloadCIDRAZ2
+  availability_zone = local.az1
+}
+
+resource "aws_subnet" "securityServicesSubnetInsideAZ3" {
+  vpc_id            = aws_vpc.vpc.id
+  cidr_block        = var.SecurityServiceInsideCIDRAZ3
+  availability_zone = local.az1
+}
+
+resource "aws_subnet" "securityServicesSubnetOutsideAZ3" {
+  vpc_id            = aws_vpc.vpc.id
+  cidr_block        = var.SecurityServiceOutsideCIDRAZ3
+  availability_zone = local.az1
+}
+
+resource "aws_subnet" "securityServicesSubnetWorkloadAZ3" {
+  vpc_id            = aws_vpc.vpc.id
+  cidr_block        = var.SecurityServiceWorkloadCIDRAZ3
+  availability_zone = local.az1
+}

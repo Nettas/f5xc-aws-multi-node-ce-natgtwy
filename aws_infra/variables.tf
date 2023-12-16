@@ -58,6 +58,41 @@ variable "SecurityServiceWorkloadCIDRAZ1" {
   default     = "10.0.127.0/24"
 }
 
+variable "SecurityServiceInsideCIDRAZ2" {
+  type        = string
+  description = "Subnet for inside interface of F5XC CE virtual appliances"
+  default     = "10.0.20.0/24"
+}
+
+variable "SecurityServiceOutsideCIDRAZ2" {
+  type        = string
+  description = "Subnet for inside interface of F5XC CE virtual appliances"
+  default     = "10.0.120.0/24"
+}
+
+variable "SecurityServiceWorkloadCIDRAZ2" {
+  type        = string
+  description = "Subnet for inside interface of F5XC CE virtual appliances"
+  default     = "10.0.128.0/24"
+}
+
+variable "SecurityServiceInsideCIDRAZ3" {
+  type        = string
+  description = "Subnet for inside interface of F5XC CE virtual appliances"
+  default     = "10.0.30.0/24"
+}
+
+variable "SecurityServiceOutsideCIDRAZ3" {
+  type        = string
+  description = "Subnet for inside interface of F5XC CE virtual appliances"
+  default     = "10.0.130.0/24"
+}
+
+variable "SecurityServiceWorkloadCIDRAZ3" {
+  type        = string
+  description = "Subnet for inside interface of F5XC CE virtual appliances"
+  default     = "10.0.129.0/24"
+}
 
 variable "az1" {
   description = "OPTIONAL: AWS availability zone to deploy first Customer Edge into"
